@@ -37,7 +37,7 @@
             bindings = <
 &trans  &trans        &trans            &trans             &trans     &trans                          &trans         &trans        &trans        &trans         &trans        &trans
 &trans  &kp INS       &kp PRINTSCREEN   &kp K_APPLICATION  &none      &none                           &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &kp RA(BSPC)  &kp BACKSPACE
-&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT     &none      &kp CAPSLOCK                    &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp DELETE    &kp BSPC
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT     &none      &kp CAPSLOCK                    &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp DELETE    &kp ENTER
 &trans  &kp LG(Z)     &kp LG(X)         &kp LG(C)          &kp LG(V)  &none         &trans    &trans  &none          &kp HOME      &none         &kp END        &none         &trans
                       &trans            &trans             &trans     &mo 3         &trans    &trans  &trans         &trans        &trans        &trans
             >;
