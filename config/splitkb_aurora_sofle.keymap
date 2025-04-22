@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        lh_space {
+            bindings = <&kp SPACE>;
+            key-positions = <54 24>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,17 +33,17 @@
             >;
         };
 
-        layer_1 {
+        raise {
             bindings = <
 &trans     &kp F1     &kp F2     &kp F3    &kp F4          &kp F5                         &kp F6            &kp F7             &kp F8    &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4          &kp N5                         &kp N6            &kp N7             &kp N8    &kp N9     &kp N0    &kp F12
+&kp TILDE  &kp N1     &kp N2     &kp N3    &kp N4          &kp N5                         &kp N6            &kp N7             &kp N8    &kp N9     &kp N0    &kp F12
 &trans     &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR      &kp PERCENT                    &kp CARET         &kp AMPS           &kp STAR  &kp LPAR   &kp RPAR  &kp PIPE
 &trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LEFT_BRACE  &kp RBRC     &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &kp COLON  &kp BSLH  &trans
                       &trans     &trans    &trans          &trans       &trans    &trans  &mo 3             &trans             &trans    &trans
             >;
         };
 
-        layer_2 {
+        lower {
             bindings = <
 &trans  &trans        &trans            &trans             &trans     &trans                          &trans         &trans        &trans        &trans         &trans        &trans
 &trans  &kp INS       &kp PRINTSCREEN   &kp K_APPLICATION  &none      &none                           &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &kp RA(BSPC)  &kp BACKSPACE
