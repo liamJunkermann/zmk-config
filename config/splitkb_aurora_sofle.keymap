@@ -10,7 +10,45 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ctrl_l {
+            key-positions = <26 27>;
+            bindings = <&kp LCTRL>;
+            layers = <0>;
+        };
+
+        opt_l {
+            key-positions = <27 28>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
+
+        ctrl_opt_l {
+            key-positions = <26 27 28>;
+            bindings = <&kp LC(LALT)>;
+            layers = <0>;
+        };
+
+        opt_r {
+            key-positions = <31 32>;
+            bindings = <&kp RALT>;
+            layers = <0>;
+        };
+
+        ctrl_r {
+            key-positions = <32 33>;
+            bindings = <&kp RCTRL>;
+            layers = <0>;
+        };
+
+        ctrl_opt_r {
+            key-positions = <31 32 33>;
+            bindings = <&kp RA(RCTRL)>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
